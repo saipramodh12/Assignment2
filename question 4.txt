@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		How to Find the sum of Values 
+		of an Array in JavaScript? 
+	</title> 
+</head> 
+
+<body style="text-align:center;"> 
+	
+	<h1 style = "color:green;" > 
+		GeeksForGeeks 
+	</h1> 
+	
+	<h3> 
+		How to Find the sum of Values 
+		of an Array in JavaScript? 
+	</h3> 
+	
+	<h4> 
+		----Given Array----<br> 
+		[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] 
+	</h4> 
+	
+	<button onclick="myFunction()">Click</button> 
+	
+	<p id="gfg"></p> 
+	
+	<script> 
+		$(document).ready(function() { 
+			$("button").click(function() { 
+				function sum(input) { 
+					if (toString.call(input) !== "[object Array]") 
+					return false; 
+					
+					var total = 0; 
+					for(var i=0;i<input.length;i++) {				 
+						if(isNaN(input[i])) { 
+							continue; 
+						} 
+						
+						total += Number(input[i]); 
+					} 
+					return total; 
+				} 
+				document.getElementById("gfg").innerHTML
+						= "----Sum of Array----" + "<br>" 
+						+ sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]); 
+			}); 
+		}); 
+	</script> 
+</body> 
+
+</html>			 

@@ -1,0 +1,2 @@
+clothes[0] is undefined because clothes array is Empty.
+when JavaScript executes clothes.length = 0, All the elements in the array are deleted.
